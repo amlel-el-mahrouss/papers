@@ -10,7 +10,7 @@
 \usepackage{mathtools}
 \usepackage[margin=0.5in,top=1in,bottom=1in]{geometry}
 
-\title{Notes for Several Formulas.}
+\title{Second Notes for Several Formulas.}
 \author{Amlal El Mahrouss\\\texttt{amlal@nekernel.org}}
 \date{February 18, 2026}
 
@@ -32,26 +32,18 @@
 
 We assume these definitions are valid within their conditions:
 
-\subsection{DEFINITION OF A SUM $S(t) \in \mathbb{R}$}
+\subsection{DEFINITION OF A SUM $C \in \mathbb{R}$}
 We define:
 \begin{equation}
-    S(t) \coloneqq \sum_{k=1}^{e}\frac{k \cdot t}{e}\cdot ke, \quad \int_{a}^{b}S(t)dt
+C(n) \coloneq \sum_{k=1}^{n} \sum_{d=(k+1)}^{n+1} S(\ln (k \cdot d)), \quad S(t) \in \mathbb{R}
 \end{equation}
-Where $\forall t \in \mathbb{R}, t > 1$.
+Where $(n\cdot \pi) > S(t) > 0$.
 
-\subsection{DEFINITION OF A SUM $W(t) \in \mathbb{R}$}
+\subsection{DEFINITION OF A CONTOUR INTEGRAL $I_{1} \in \mathbb{C}$}
 We define:
 \begin{equation}
-    W(t) \coloneqq S(t \cdot e)\cdot(\sum_{k=1}^{n} S((t+k)\cdot e)) +C_{rem}, \quad \forall C_{rem} \in \mathbb{R}, \quad C > 0
+I_{1}(t) \coloneq \oint_{|z|=e} \frac{|Log((t\cdot z))|}{z}dz, \quad \forall t \in \mathbb{R}
 \end{equation}
-Where $\forall t \in \mathbb{R}, t > 0$.
-
-\subsection{DEFINITION OF THE NORM $N_{sum}(t) \in \mathbb{R}$}
-
-We define:
-\begin{equation}
-    N_{sum}(t) \coloneqq \sqrt{S(t)^2_{n}} \quad \forall t \in \mathbb{R}
-\end{equation}
-If and only if $t > 1, \quad n_{min} < n < n_{max}, \quad n_{min} > 0$.
+Where $Log$ is the Principal Complex Logarithm.
 
 \end{document}
