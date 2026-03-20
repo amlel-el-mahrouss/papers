@@ -1,0 +1,188 @@
+%% ============================================================
+%% Academic Journal Paper Template
+%% Compatible with: IEEE, ACM, Elsevier, Springer conventions
+%% ============================================================
+
+\documentclass[10pt, twocolumn]{article}
+
+%% ---- Core Packages ----------------------------------------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}           % Microtypographic refinements
+
+%% ---- Page Geometry ----------------------------------------
+\usepackage[
+  top=1in, bottom=1in,
+  left=0.75in, right=0.75in,
+  columnsep=0.25in
+]{geometry}
+
+%% ---- Mathematics ------------------------------------------
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{mathtools}
+\usepackage{bm}                  % Bold math symbols
+
+%% ---- Figures & Tables -------------------------------------
+\usepackage{graphicx}
+\usepackage{booktabs}            % Professional table rules
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+
+%% ---- Algorithms -------------------------------------------
+\usepackage[ruled, vlined, linesnumbered]{algorithm2e}
+
+%% ---- Code Listings ----------------------------------------
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstdefinestyle{codestyle}{
+  backgroundcolor=\color{gray!8},
+  basicstyle=\ttfamily\footnotesize,
+  breakatwhitespace=false,
+  breaklines=true,
+  captionpos=b,
+  commentstyle=\color{green!50!black},
+  keywordstyle=\color{blue}\bfseries,
+  stringstyle=\color{orange!70!black},
+  numberstyle=\tiny\color{gray},
+  numbers=left,
+  numbersep=5pt,
+  showstringspaces=false,
+  frame=single,
+  rulecolor=\color{gray!40},
+  tabsize=2
+}
+\lstset{style=codestyle}
+
+%% ---- Hyperlinks -------------------------------------------
+\usepackage[
+  colorlinks=true,
+  linkcolor=blue!70!black,
+  citecolor=green!50!black,
+  urlcolor=blue!60!black
+]{hyperref}
+\usepackage{url}
+
+%% ---- Bibliography -----------------------------------------
+\usepackage[numbers, sort&compress]{natbib}
+
+%% ---- Miscellaneous ----------------------------------------
+\usepackage{lipsum}              % Lorem ipsum filler — remove in production
+\usepackage{enumitem}
+\usepackage{siunitx}             % SI units: \SI{3.14}{\mega\hertz}
+\usepackage{cleveref}            % Smart cross-references: \cref{fig:foo}
+
+%% ---- Theorem Environments ---------------------------------
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+%% ---- Custom Commands --------------------------------------
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Prob}{\mathbb{P}}
+\newcommand{\norm}[1]{\left\lVert #1 \right\rVert}
+\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
+\newcommand{\inner}[2]{\left\langle #1,\, #2 \right\rangle}
+\newcommand{\ie}{\textit{i.e.}\xspace}
+\newcommand{\eg}{\textit{e.g.}\xspace}
+\newcommand{\etal}{\textit{et al.}\xspace}
+
+%% ---- Caption Formatting -----------------------------------
+\captionsetup{
+  font=small,
+  labelfont=bf,
+  format=hang,
+  justification=justified
+}
+
+%% ---- Header / Footer --------------------------------------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\itshape Ne.org, Vol.~2, No.~1, March 2026}
+\fancyhead[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+%% ============================================================
+%%  FRONT MATTER
+%% ============================================================
+
+\title{%
+  \vspace{-1.5em}%
+  \large\textbf{The N-Token concept.}%
+}
+
+\author{%
+  \textbf{Amlal El Mahrouss}$^{1}$\thanks{Corresponding author. Email: amlalelmahrouss@icloud.com}
+  \\amlalelmahrouss@icloud.com\\[0.4em]
+}
+
+\date{%
+  \small 15 March, 2026
+}
+
+%% ============================================================
+\begin{document}
+%% ============================================================
+
+\twocolumn[{%
+  \maketitle
+  \vspace{-0.5em}
+  \rule{\linewidth}{0.4pt}
+  %% ---- Abstract -------------------------------------------
+  \begin{center}
+  \begin{minipage}{0.92\linewidth}
+    \small
+    \textbf{Abstract.}\enspace
+    This development paper presents an algorithm which expresses characters, 'A', 'B', 'Z' as single tokens. Each character has an index chosen by two parties, e.g: A=428, B=422.
+
+    \medskip
+    \textbf{Keywords:}\enspace
+    Computer Science; Software Engineering;
+  \end{minipage}
+  \end{center}
+  \vspace{0.8em}
+  \rule{\linewidth}{0.4pt}
+  \vspace{1em}
+}]
+
+%% ============================================================
+\section{Introduction}
+\label{sec:acode-theorem01}
+LLMs have for a long-time struggled with multi-width characters in their transformers architecture. This paper aim to address to current gaps present in such transformers by introducing an algorithm which divide multi-width characters into digestable chunks. 
+
+\section{Theorem 1}
+\label{sec:acode-theorem01}
+
+We shall introduce the following algorithm of A-Indices.
+Let the following algorithm for indices elements in an A-Base:
+\begin{equation}
+    \operatorname{AGroup}(x^{n-1}+x^{n-2}+x^{n})+\operatorname{AGroup}(x^{n+2}+x^{n+1})
+\end{equation}
+\begin{equation}
+    \forall x \in \mathbb{R}, n > 2, x > 1, \forall n \in \mathbb{Z}
+\end{equation}
+Where $x$ is the A-Base index. An $\operatorname{AAlgorithm(0)}$ is an invalid index. Each element $x$ shall be divisible by a power of two. An $\operatorname{AAlgorithm}$ is an algorithm used to encode an index to `A-Code'.
+
+\section{Theorem 2}
+\label{sec:acode-theorem02}
+
+Let a set of $\operatorname{AAlgorithm(x)}$ be elements of an `A-Code' alphabet. From a start index to an end index. An $\operatorname{AAlgorithm(x)}$ should be non-zero and continuous in the `A-Code' set. 
+
+\end{document}
