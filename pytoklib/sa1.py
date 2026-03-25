@@ -6,6 +6,6 @@ def agroup(values):
     v = []
 
     for vi in values:
-        v.append([{vi}, list(vi.encode("utf-8"))])
+        v.append([[str(vi)], list(vi.encode("utf-8"))])
 
     return v

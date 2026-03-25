@@ -1,0 +1,12 @@
+# Instructions
+
+Take the characters extracted from their unicode patterns and use it to pattern match sub-letters based on their unicode common code.
+Then translate the text back to english:
+
+# Text to Translate:
+
+この文は、法学修士号取得者であれば読み、外国語に翻訳できるはずの簡単な文です。
+
+Only use the dataset before # Instructions and the # Text to translate only.
+
+Return the text in Standard English.
