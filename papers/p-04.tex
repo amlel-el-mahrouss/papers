@@ -1,0 +1,186 @@
+%% ============================================================
+%% Academic Journal Paper Template
+%% Compatible with: IEEE, ACM, Elsevier, Springer conventions
+%% ============================================================
+
+\documentclass[10pt, twocolumn]{article}
+
+%% ---- Core Packages ----------------------------------------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}           % Microtypographic refinements
+
+%% ---- Page Geometry ----------------------------------------
+\usepackage[
+  top=1in, bottom=1in,
+  left=0.75in, right=0.75in,
+  columnsep=0.25in
+]{geometry}
+
+%% ---- Mathematics ------------------------------------------
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{mathtools}
+\usepackage{bm}                  % Bold math symbols
+\usepackage{filecontents}
+
+%% ---- Figures & Tables -------------------------------------
+\usepackage{graphicx}
+\usepackage{booktabs}            % Professional table rules
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+
+%% ---- Code Listings ----------------------------------------
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\lstdefinestyle{codestyle}{
+  backgroundcolor=\color{gray!8},
+  basicstyle=\ttfamily\footnotesize,
+  breakatwhitespace=false,
+  breaklines=true,
+  captionpos=b,
+  commentstyle=\color{green!50!black},
+  keywordstyle=\color{blue}\bfseries,
+  stringstyle=\color{orange!70!black},
+  numberstyle=\tiny\color{gray},
+  numbers=left,
+  numbersep=5pt,
+  showstringspaces=false,
+  frame=single,
+  rulecolor=\color{gray!40},
+  tabsize=2
+}
+\lstset{style=codestyle}
+
+%% ---- Hyperlinks -------------------------------------------
+\usepackage[
+  colorlinks=true,
+  linkcolor=blue!70!black,
+  citecolor=green!50!black,
+  urlcolor=blue!60!black
+]{hyperref}
+\usepackage{url}
+\usepackage{arrayjobx}
+%% ---- Bibliography -----------------------------------------
+\usepackage[numbers, sort&compress]{natbib}
+
+%% ---- Miscellaneous ----------------------------------------
+\usepackage{lipsum}              % Lorem ipsum filler — remove in production
+\usepackage{enumitem}
+\usepackage{siunitx}             % SI units: \SI{3.14}{\mega\hertz}
+\usepackage{cleveref}            % Smart cross-references: \cref{fig:foo}
+
+%% ---- Theorem Environments ---------------------------------
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+%% ---- Custom Commands --------------------------------------
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Prob}{\mathbb{P}}
+\newcommand{\norm}[1]{\left\lVert #1 \right\rVert}
+\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
+\newcommand{\inner}[2]{\left\langle #1,\, #2 \right\rangle}
+\newcommand{\ie}{\textit{i.e.}\xspace}
+\newcommand{\eg}{\textit{e.g.}\xspace}
+\newcommand{\etal}{\textit{et al.}\xspace}
+
+%% ---- Caption Formatting -----------------------------------
+\captionsetup{
+  font=small,
+  labelfont=bf,
+  format=hang,
+  justification=justified
+}
+
+%% ---- Header / Footer --------------------------------------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+%% ============================================================
+%%  FRONT MATTER
+%% ============================================================
+
+\title{%
+  \vspace{-1.5em}%
+  \large\textbf{On Space Complexity Lemmas.}%
+}
+
+\author{%
+  \textbf{A. E. Mahrouss}$^{1}$\thanks{Corresponding author. Email: aelmahrouss@acm.org}
+  \\aelmahrouss@acm.org\\[0.4em]
+}
+
+\date{%
+  \small \today
+}
+
+%% ============================================================
+\begin{document}
+%% ============================================================
+
+\twocolumn[{%
+  \maketitle
+  \vspace{-0.5em}
+  \vspace{0.8em}
+  \rule{\linewidth}{0.4pt}
+  \vspace{1em}
+}]
+
+%% ============================================================
+
+\section{Abstract}
+
+Per recent developments, the complexity of a task $t$ of $C(t)$ is gradually being taken into account in a n-dimensional space of $S_{n}(C(t))$ for $n > 1, \space n \in \mathbb{N}$.
+In this paper, we explore the implications of $C(t)$ for $C(t)$ returning a non-trivial solution, and how it affects the efficiency of algorithms designed to solve $t$.
+
+\section{Introduction}
+
+Defining the complexity of a task $t$ as $C(t)$, we can consider the space of complexities $S_{n}(C(t))$ for $n > 1, \space n \in \mathbb{N}$.
+\begin{equation}
+  S_{n}(C(t)) = \sum_{i=1}^{n} C(t){^{i}}
+\end{equation}
+Defining the following lemmas:
+
+\section{Lemmas}
+\begin{lemma}
+If $C(t) > 0$, there exists a value of $t$ such that $t \in \mathbb{S_n}$.
+\end{lemma}
+\begin{lemma}
+There exists a value of $C(t)$ such that $C(t) \in \mathbb{S_n}$.
+\end{lemma}
+
+\section{Theorems}
+\begin{theorem}
+If $C(t) > 0$, there exists a value of $t$ such
+that $t \in \mathbb{S_n}$.
+\end{theorem}
+
+\nocite{*}
+
+\bibliographystyle{acm}
+\bibliography{acm_1008328.1008329}
+
+\end{document}

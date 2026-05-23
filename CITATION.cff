@@ -8,10 +8,10 @@ authors:
     email: amlal@nekernel.org
 identifiers:
   - type: url
-    value: 'https://nekernel.org'
+    value: 'https://amlal.nekernel.org'
     description: NeKernel.org
-repository-code: 'https://github.com/amlel-el-mahrouss/paper-notes'
-url: 'https://nekernel.org'
+repository-code: 'https://github.com/amlel-el-mahrouss/notebook'
+url: 'https://amlal.nekernel.org'
 abstract: >-
   Working Group Papers of Amlal El Mahrouss.
 keywords:
