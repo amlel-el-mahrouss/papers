@@ -151,46 +151,29 @@
 
 %% ============================================================
 
-\section{Abstract}
-The note presents lemmas and theorems that may be suited for further research. 
-
-\section{Introduction and Preliminaries}
-Defining $t$ as $C(t)$, we can consider a space of $\mathbb{S}(C(t), p)$ for $n > 1, \space n \in \mathbb{N}$ and $p \in \mathbb{R}$.
-
 \section{On Theorems}
 \begin{theorem}
-  There exists:
+  There exists a solution to $A$ in $\mathbb{C}$:
   \begin{equation}
-    \mathbb{S}(C(t), p) = i^{p}
+    A = \oint \frac{\ln(\frac{1}{n^s})}{\frac{1}{n^s}}ds
   \end{equation}
-  for $p$ being a positive integer reaching $\lim{\mathbb{S}(C(t), p)}$.
+  that simplifies to $\sum_{s=1}^{p} \frac{1}{n^s}$ defined in $\mathbb{R}$.
 \end{theorem}
 
 \begin{theorem}
-  There exists an integral solution of:
+  There exists in $\mathbb{R}$:
   \begin{equation}
-    \int \frac{\log_{10}\left(\left|\sum_{n=1}^{\infty} \frac{1}{n^s}\right|\right)}{\sum_{n=1}^{\infty} \frac{1}{n^s}}
+    \lim _{n\:\to \infty }\:\sum_{n=1}^{p} \frac{1}{n^s}
   \end{equation}
-  that is within $e$ and $\pi$ in $\mathbb{R}$.
 \end{theorem}
 
 \begin{theorem}
-  There exists a value of $s$ between $\pi$ and $\lim_{n \to \infty} \frac{1}{n^s}$ such that:
+  There exists the following in $\mathbb{R}$:
   \begin{equation}
-    \pi > \sum_{n=1}^{\infty} \frac{1}{n^s} > \lim_{n \to \infty} \frac{1}{n^s}
+    \lim _{\left(k-p\right)\to \infty } \frac{(k-p)^{e}}{\ln(k-p)}
   \end{equation}
-  when $s \in \mathbb{R}$. And $\lim_{n \to \infty} \frac{1}{n^s}$ shall yield for $s > 1.39425$.
+  for $(k-p) > 1$
 \end{theorem}
-
-\begin{theorem}
-  There exists for a definite integral that can be represented in the form of:
-  \begin{equation}
-    \int \sum_{n=1}^{\infty} \frac {1}{n^s} dt \approx \pi \frac{(k-p)^{-\pi}}{\log(k-p)}+\frac{(k-p)^{-\pi}}{\log(k-p)}+C
-  \end{equation}
-\end{theorem}
-
-\section{Remarks}
-The note has presented several theorems that may be useful for further research in the field of mathematical analysis and number theory.
 \nocite{*}
 
 \bibliographystyle{acm}
