@@ -145,19 +145,26 @@
   \begin{equation}
     pw(n, p, a) = \int \frac{a(n)}{p} da
   \end{equation}
+  Where
   \begin{equation}
-    PW(n, p, a) = \frac{n}{p}\cdot \frac{a^2}{2}\pm C
+    PW(n, p, a) = \frac{n}{p} \frac{a^2}{2}\pm C
   \end{equation}
+  We can form the following equations by dviding $-PW(n, p, a)$
   \begin{equation}
-    0 = \frac{\frac{n}{p}\cdot \frac{a^2}{2}\pm C}{-PW(n, p, a)}
+    0 = \frac{\frac{n}{p} \frac{a^2}{2}\pm C}{-PW(n, p, a)}
   \end{equation}
+  And then dividing $\pm C$
   \begin{equation}
-    \lim \frac{\frac{n}{p}\cdot \frac{a^2}{2}\pm C}{-PW(n, p, a)} = \pm \infty
+    \pm C = \frac{\frac{n}{p} \frac{a^2}{2}}{-PW(n, p, a)\pm C}
   \end{equation}
 \end{theorem}
 
 \begin{theorem}
-  Suppose $\frac{dy}{dx}pw(n, p, a) = v_{n}; \quad v_{n} \in \mathbb{R}$. Where $ pw(n, p, a) \in \mathbb{R}$. Then
+  Suppose
+  \begin{equation}
+    \frac{dy}{dx}pw(n, p, a) = v_{n}; \quad v_{n} \in \mathbb{R}; \quad pw(n, p, a) \in \mathbb{R}
+  \end{equation}
+  Then
   \begin{equation}
     v_{n} \in \mathbb{R}; \quad v_{n}\neq 0
   \end{equation}
@@ -166,22 +173,27 @@
 \begin{theorem}
   There exists
   \begin{equation}
-    c \cdot p = \frac{p!}{\ln \left(p\right)!}
+    cp = \frac{p!}{\ln \left(p\right)!}
   \end{equation}
   \begin{equation}
-    c = \frac{p!}{p \cdot \ln \left(p\right)!}; \quad p \neq 0
+    c = \frac{p!}{p\ln \left(p\right)!}; \quad p \neq 0
   \end{equation}
 \end{theorem}
 
 \begin{theorem}
   Suppose
   \begin{equation}
-    \iiint (\frac{p!}{p \cdot \ln \left(p\right)!} dp \cdot dy \cdot dn )= c_{1} n y + c_{2} n + c_{3} + n y \operatorname{li}(p)
+    \int \frac{p!}{p\ln \left(p\right)!}dp = z
   \end{equation}
+  Then. Divide $\int \frac{p!}{p\ln \left(p\right)!}dp$ on both sides.
   \begin{equation}
-    z = c_{1} n y + \sum_{n=2}^{n-1} ( c_{n} n ) + c_{n-1} n y \operatorname{li}(p)
+    -z = \frac{1}{\int \frac{p!}{p\ln \left(p\right)!}dp}
   \end{equation}
-  There exists an identity of the above. If and only if $z \in \mathbb{R}$.
+  Thus. By the following inequality
+  \begin{equation}
+    -z < \int \frac{p!}{p\ln \left(p\right)!}dp \geq z
+  \end{equation}
+  There exists an identity of the above. If and only If. $z \in \mathbb{R}$.
 \end{theorem}
 
 \end{document}

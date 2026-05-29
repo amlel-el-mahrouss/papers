@@ -145,7 +145,10 @@ Suppose
 \begin{equation}
     \frac{\log(|K|)}{K} d(K); \quad K \neq 0; \quad K=\sum_{n=1}^{\pi} \frac{1}{n^s}
 \end{equation}
-If $K \neq 0$. Then $K$ admits a number of solutions $n$ in $\mathbb{R}$.
+If $K \neq 0$. Then $K$ admits a number of solutions $n$ in $\mathbb{R}$. Then
+\begin{equation}
+  \lim_{s=\pi} K = \text{converges}
+\end{equation}
 \end{theorem}
 
 \begin{theorem}
@@ -157,7 +160,37 @@ If and only If. $\iint f'(x) dx \neq \operatorname{undefined}$. Then $\pm C$ adm
 \begin{equation}
   \pm C = \frac{s}{-(\iint f'(x) dx)}
 \end{equation}
-If and only If $\pm C \neq 0$
+If and only If. $\pm C \neq 0$. Then $\lim_{x\to \infty}{\pm C}$ admits a solution of the following
+\begin{equation}
+  \lim_{x\to \infty}{\pm C} = \pm L
+\end{equation}
 \end{theorem}
+
+\begin{equation}
+  \Delta x = \pm C = \frac{s}{-(\iint f'(x) dx)}
+\end{equation}
+Thus. By moving $\pm C$ on the left side.
+\begin{equation}
+  \Delta x + \frac{s}{-(\iint f'(x) dx)} = 0
+\end{equation}
+
+\begin{proof}
+Assume for $x=\pi$.
+\begin{equation}
+  \Delta \pi + \frac{s}{-(\iint f'(\pi) d\pi)} = 0
+\end{equation}
+Becomes by multipying $\pi$ on both sides.
+\begin{equation}
+  \Delta + \frac{s}{-(\iint f'(\pi) d\pi)} = 0
+\end{equation}
+Which then becomes
+\begin{equation}
+  \frac{s}{-(\iint f'(\pi) d\pi)} = -\Delta
+\end{equation}
+Which then $\frac{s}{-(\iint f'(\pi) d\pi)}$ becomes equal to
+\begin{equation}
+  -(\iint f'(\pi) d\pi) = \frac{-\Delta}{s}
+\end{equation}
+\end{proof}
 
 \end{document}
