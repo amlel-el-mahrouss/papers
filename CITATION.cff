@@ -1,6 +1,6 @@
 cff-version: 1.2.0
-title: Amlal's Working Papers.
-message: Amlal's Working Papers.
+title: Amlal's Working Book.
+message: Amlal's Working Book.
 type: collection
 authors:
   - given-names: Amlal
@@ -10,10 +10,10 @@ identifiers:
   - type: url
     value: 'https://amlal.nekernel.org'
     description: NeKernel.org
-repository-code: 'https://github.com/amlel-el-mahrouss/notebook'
+repository-code: 'https://github.com/amlel-el-mahrouss/book'
 url: 'https://amlal.nekernel.org'
 abstract: >-
-  Working Group Papers of Amlal El Mahrouss.
+  Working Book of Amlal El Mahrouss.
 keywords:
   - cs
   - systems
