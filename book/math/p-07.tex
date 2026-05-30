@@ -1,7 +1,7 @@
 % AUTHOR: Amlal El Mahrouss
 % PURPOSE: DN001.08: Notes for Several Formulas.
 
-\documentclass[11pt, a4paper]{article}
+\documentclass[10pt, twocolumn]{article}
 \usepackage{graphicx}
 \usepackage{listings}
 \usepackage{amsmath,amssymb,amsthm}
@@ -73,7 +73,7 @@
 \usepackage{arrayjobx}
 %% ---- Bibliography -----------------------------------------
 \usepackage[numbers, sort&compress]{natbib}
-
+\usepackage{esint}
 %% ---- Miscellaneous ----------------------------------------
 \usepackage{lipsum}              % Lorem ipsum filler — remove in production
 \usepackage{enumitem}
@@ -122,8 +122,12 @@
 \fancyhead[R]{\small\thepage}
 \renewcommand{\headrulewidth}{0.4pt}
 
-\title{P-05}
-\author{A. E. Mahrouss\\\texttt{ae@nekernel.org}}
+\title{%
+  \vspace{-1.5em}%
+  \large\textbf{Equations \& Theorems for Mathematics}%
+}
+
+\author{A. E. Mahrouss\\\texttt{amlal@nekernel.org}}
 \date{\today}
 
 \begin{document}
@@ -136,19 +140,88 @@
   \vspace{1em}
 }]
 
-\maketitle
+\section{Equations \& Theorems}
 
-\section{Theorems}
 \begin{theorem}
-Let $\rho(n, p, s, x) \in \mathbb{R}$
+For
 \begin{equation}
-\rho(n, p, s, x) \coloneq \frac{\int (\frac{p}{n^{s}}) \text{ } dx}{\frac{p}{n^{s}}! }
+    \frac{\log(|K|)}{K} d(K); \quad K \neq 0; \quad K=\sum_{n=1}^{\pi} \frac{1}{n^s}
 \end{equation}
-For $x = \pi$
+If $K \neq 0$. Then $K$ admits a number of solutions $n$ in $\mathbb{R}$. Then
 \begin{equation}
-  \lim_{x \to \pi} \rho(n, p, s, x) \implies \frac{\pi p\pm Cn^s}{n^s\frac{p}{n^s}!}
+  \lim_{s=\pi} K = \text{converges}
 \end{equation}
-If and only if $x > 0$. And $\lim x \to \pi$
 \end{theorem}
+
+\begin{theorem}
+For
+\begin{equation}
+  \iint f'(x) dx \pm C = s
+\end{equation}
+If and only If. $\iint f'(x) dx \neq \operatorname{undefined}$. Then $\pm C$ admits an equation of
+\begin{equation}
+  \pm C = \frac{s}{-(\iint f'(x) dx)}
+\end{equation}
+If and only If. $\pm C \neq 0$. Then $\lim_{x\to \infty}{\pm C}$ admits a solution of the following
+\begin{equation}
+  \lim_{x\to \infty}{\pm C} = \pm L
+\end{equation}
+\end{theorem}
+
+\begin{theorem}
+There exists
+\begin{equation}
+\Delta x \pm C + \frac{s}{-(\iint f'(x) dx)} = \pm D
+\end{equation}
+Thus. Moving $\pm C$ so that 
+\begin{equation}
+  \Delta x + \frac{s}{-(\iint f'(x) dx)} = \pm D \pm C 
+\end{equation}
+\end{theorem}
+
+\begin{theorem}
+For $x\neq 0$. Then
+\begin{equation}
+  \Delta x \pm \frac{s}{-(\iint f'(x) dx)} = \pm D \pm C 
+\end{equation}
+Thus
+\begin{equation}
+  \pm \frac{s}{-(\iint f'(x) dx)} = \frac{\pm D \pm C}{\Delta x }
+\end{equation}
+Thus the following identity.
+\end{theorem}
+
+\begin{theorem}
+We identically have
+\begin{equation}
+  z = -\frac{\Delta}{\pm s}; \quad z \neq 0
+\end{equation}
+If and only If
+\begin{equation}
+  x \neq 0; \quad x \in \mathbb{R}
+\end{equation}
+Then. There is an identity of $x$ such that
+\begin{equation}
+  -\frac{\Delta}{\pm s}x; \quad x \neq 0
+\end{equation}
+\end{theorem}
+
+\begin{theorem}
+If for $y \neq 0$.
+\begin{align*}
+x^n + y^n &= p \\
+y &= \sqrt[n]{p - x^n}
+\end{align*}
+Then. There admits a solution such that
+\begin{align*}
+  \int y dx &= \pm D; \quad \sqrt[n]{p - x^n} = y; \quad y \neq 0 \\
+  &= x\sqrt[z]{p - x^{z}} \pm C \pm D; \quad z = \frac{(n+2)}{(n+1)}; \quad n \neq 0
+\end{align*}
+\end{theorem}
+
+\nocite{*}
+
+\bibliographystyle{acm}
+\bibliography{A_Course_of_Pure_Mathematics, General_Theory_Dirichlet_Series, Riemann}
 
 \end{document}

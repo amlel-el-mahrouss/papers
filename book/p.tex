@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[10pt, twocolumn]{article}
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -20,24 +20,27 @@
 \theoremstyle{remark}
 \newtheorem{remark}[theorem]{Remark}
 
-\title{P-03}
+\title{Introduction \& Preface}
 \author{A. E. Mahrouss\\amlal@nekernel.org}
 \date{\today}
 
 \begin{document}
-\maketitle
 
-\section{Theorems}
+\twocolumn[{%
+  \maketitle
+  \vspace{-0.5em}
+  \vspace{0.8em}
+  \rule{\linewidth}{0.4pt}
+  \vspace{1em}
+}]
 
-\begin{theorem}
-For
-\begin{equation}
-    A(n, p) \coloneq \sum_{n}^{p} M(n p)
-\end{equation}
-\begin{equation}
-    A(n, p) \implies p! + \text{ } (n+1p)! + \text{ } (n+2p)! + \text{ } \dots \text{ } + (n+Lp)! 
-\end{equation}
-For $A(n, p) \neq 0$, the previous identity holds for numbers in $\mathbb{R}$.
-\end{theorem}
+
+\section{Preface}
+
+The book has received recent restructuring including now categorized pages for each field. (Physics, Math, IT, CS). Which I hope may help you navigate the book better.
+
+\nocite{*}
+
+\bibliographystyle{acm}
 
 \end{document}

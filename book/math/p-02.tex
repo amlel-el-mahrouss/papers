@@ -21,14 +21,21 @@
 \theoremstyle{remark}
 \newtheorem{remark}[theorem]{Remark}
 
-\title{P-02}
+\title{Equations \& Theorems for Mathematics}
 \author{A. E. Mahrouss\\amlal@nekernel.org}
 \date{\today}
 
 \begin{document}
-\maketitle
 
-\section{Theorems}
+\twocolumn[{%
+  \maketitle
+  \vspace{-0.5em}
+  \vspace{0.8em}
+  \rule{\linewidth}{0.4pt}
+  \vspace{1em}
+}]
+
+\section{Equations \& Theorems}
 \begin{theorem}
     There exists in $\mathbb{R}$
     \begin{equation}
@@ -38,5 +45,10 @@
         \lim_{x\to\infty} \frac{p^2n+2C}{px^2+2C} = \frac{\operatorname{undefined}}{c} = C
     \end{equation}
 \end{theorem}
+
+\nocite{*}
+
+\bibliographystyle{acm}
+\bibliography{A_Course_of_Pure_Mathematics, General_Theory_Dirichlet_Series, Riemann}
 
 \end{document}

@@ -1,0 +1,59 @@
+\documentclass[10pt, twocolumn]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{textcomp}
+\usepackage{amsthm}
+\usepackage{mathtools}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{%
+  \vspace{-1.5em}%
+  \large\textbf{Equations \& Theorems for Mathematics}%
+}
+\author{A. E. Mahrouss\\amlal@nekernel.org}
+\date{\today}
+
+\begin{document}
+
+\twocolumn[{%
+  \maketitle
+  \vspace{-0.5em}
+  \vspace{0.8em}
+  \rule{\linewidth}{0.4pt}
+  \vspace{1em}
+}]
+
+
+\section{Equations \& Theorems}
+
+\begin{theorem}
+For
+\begin{equation}
+    A(n, p) \coloneq \sum_{n}^{p} M(n p)
+\end{equation}
+\begin{equation}
+    A(n, p) \implies p! + \text{ } (n+1p)! + \text{ } (n+2p)! + \text{ } \dots \text{ } + (n+Lp)! 
+\end{equation}
+For $A(n, p) \neq 0$, the previous identity holds for numbers in $\mathbb{R}$.
+\end{theorem}
+
+\nocite{*}
+
+\bibliographystyle{acm}
+\bibliography{A_Course_of_Pure_Mathematics, General_Theory_Dirichlet_Series, Riemann}
+
+\end{document}

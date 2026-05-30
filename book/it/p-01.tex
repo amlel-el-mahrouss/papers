@@ -1,18 +1,22 @@
-\documentclass{article}
+\documentclass[10pt, twocolumn]{article}
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{amssymb}
-\title{P-01}
+\title{On Theorems for Hartley's Law}
 \author{A. E. Mahrouss\\amlal@nekernel.org}
 \date{\today}
 
 \begin{document}
-\maketitle
 
-\section{Abstract}
-Example 1.a lays out the weight of a variable $S$ over a frequency $F$ that may be equal to the division of the value between the highest signal and lowest signal of $S$.
+\twocolumn[{%
+  \maketitle
+  \vspace{-0.5em}
+  \vspace{0.8em}
+  \rule{\linewidth}{0.4pt}
+  \vspace{1em}
+}]
 
-\section{Example 1.a}
+\section{Equations \& Theorems}
 Let
 $\forall S \in \mathbb{R}; \quad Baud(MIN) < S < Baud(MAX)$:
 \begin{align*}
@@ -24,6 +28,6 @@ By Hartley's Law, the weight of $S$ over its frequency $F$, may be equal of the 
 \nocite{*}
 
 \bibliographystyle{acm}
-\bibliography{ieee_citation}
+\bibliography{Bell_System_Hartley}
 
 \end{document}
