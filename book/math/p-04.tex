@@ -223,13 +223,12 @@
 \end{theorem}
 
 \begin{theorem}
-  There exists:
+  There exists for a function $U(s)$.
   \begin{align*}
-    \tau (s) &= \lim _{s\to \:\pi } -n^s+\frac{n^s}{\ln \left(n\right)}\pm C\\
-    \frac{\tau (s)}{\pm C} &= \lim _{s\to \:\pi } -n^s+\frac{n^s}{\ln \left(n\right)}\\
-    \pm \frac{n^s}{\ln \left(n\right)} + \frac{\tau (s)}{\pm C} &= \lim _{s\to \:\pi } -n^s
+    U(s) &= \lim _{s\to \:\pi } -n^s+\frac{n^s}{\ln \left(n\right)}\pm C\\
+    \frac{U(s) }{\pm C} &= \lim _{s\to \:\pi } -n^s+\frac{n^s}{\ln \left(n\right)}\\
+    \pm \frac{n^s}{\ln \left(n\right)} + \frac{U(s) }{\pm C} &= \lim _{s\to \:\pi } -n^s
   \end{align*}
-  If and only If: $\tau (s) \in \mathbb{R}$
 \end{theorem}
 
 \begin{theorem}
@@ -241,6 +240,32 @@
   \begin{equation}
     \lim_{x \to 0} \alpha(a, \dots, z) = +\infty
   \end{equation}
+\end{theorem}
+
+\begin{theorem}
+	There exists a solution for function $P(s)$:
+	\begin{align*}
+		\pm Z + P(s) &= \frac{d}{dZ} \pm P'(s)\\
+		\pm Z &= \frac{\frac{d}{dZ} \pm P'(s)}{\pm P(s)}; \quad \pm P(s) \neq 0;
+	\end{align*}
+	Such that for a limit of $\frac{d}{dZ}$:
+	\begin{align*}
+		\lim \frac{d}{dZ} \pm B &= \pm Z\\
+		\lim \frac{d}{dZ} &= \frac{\pm Z}{\pm B}; \quad \pm B \neq 0;
+	\end{align*}
+	If and only if $\lim \frac{d}{dZ}$ admits a converging value of $\frac{\pm Z}{-B}$. Then.
+	\begin{align*}
+		\lim \frac{d}{dZ} &= \frac{\pm Z}{\pm B};\\
+		\lim \frac{d}{dZ} \pm B &= \pm Z; \quad \pm Z \neq 0;
+	\end{align*}
+	Therefore:
+	\begin{align*}
+		\lim \frac{d}{dZ} \pm B &= \frac{\frac{d}{dZ} \pm P'(s)}{\pm P(s)}; \quad \pm B \neq 0;\\
+	\end{align*}
+	Thus:
+	\begin{align*}
+		\pm Z &= \frac{\frac{d}{dZ} \pm P'(s)}{\pm P(s)} = \lim \frac{d}{dZ} \pm B
+	\end{align*}
 \end{theorem}
 
 \nocite{*}
