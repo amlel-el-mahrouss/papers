@@ -126,7 +126,7 @@
 	\vspace{-1.5em}%
 	\large\textbf{Glossarium Aequationum}%
 }
-\author{A. E. Mahrouss\\amlal@nekernel.org}
+\author{By A. E. Mahrouss\\amlal@nekernel.org}
 \date{\today}
 
 %% ============================================================
@@ -528,7 +528,7 @@ $\forall \mu(n, p)$ There exists:
 	\begin{align*}
 		\int_{C}^{\pi} \frac{ \ln |x| \cdot f(y)f'(x) }{x^{n}y!} dx &= [\frac{ \ln |x| \cdot f(y)f'(x) }{x^{n}y!}]_{C}^{\pi} + D.
 	\end{align*}
-	Let us impose two inequalities in $\mathbb{R}.$:
+	Let us impose two inequalities for $\forall x, y, n \in \mathbb{R}.$:
 	\begin{align*}
 		\frac{\pi}{\frac{ \ln |x| \cdot f(y)f'(x) }{x^{n}y!}} < \frac{ \ln |x| \cdot f(y)f'(x) }{x^{n}y!} < \sum_{n=1}^{\infty} \frac{ \ln |x| \cdot f(y)f'(x) }{x^{n}y!},\\
 	\frac{\pi}{\ln |x| \cdot f(y)f'(x) } < \ln |x| \cdot f(y)f'(x)  < \sum_{n=1}^{\infty} \ln |x| \cdot f(y)f'(x).
@@ -545,7 +545,7 @@ $\forall \mu(n, p)$ There exists:
 \begin{definition}
 	Let the DFT be:
 	\begin{align*}
-		\sum_{m=0}^{n-1} x_{m}\mathrm{e}^{-i2\pi km /n}, \quad k = 0,\dots,n-1.
+		\sum_{m=0}^{n-1} x_{m}\mathrm{e}^{-i2\pi \frac{km}{n}}, \quad k = 0,\dots,n-1.
 	\end{align*}
 	For $x_{0}, \dots, x_{n-1}$ be complex numbers. Where $\mathrm{e}^{-i2\pi /n}$ is a primitive nth root of 1.
 \end{definition}
@@ -568,11 +568,25 @@ $\forall \mu(n, p)$ There exists:
 
 \subsection{Final Remarks:}
 
-\lettrine[lines=2, lhang=0.1, loversize=0.2]{T}he nine pages of theorems now comes to an end, stating them here was the first step to then develop a framework later in the AWB.
+\lettrine[lines=2, lhang=0.1, loversize=0.2]{T}he nine pages of theorems now comes to an end, stating them here was the first step to then develop a framework later in the 'AWB'. We will next plot and analyse our results based of our theorems and definitions.
+
+\subsection{Moving forward:}
+\lettrine[lines=2, lhang=0.1, loversize=0.2]{W}e will now proceed to plot and analyze the following theorems to analyze their convergence.
+
+\section{Plotting and Analysis of the previous theorems:}
+\lettrine[lines=2, lhang=0.1, loversize=0.2]{T}he previous section, which establishes 31 definitions and theorems. Will now serve as a basis for plotting.\\
+The following plot were written using 'python3' using 'matplotlib'.
+
+\begin{theorem}
+	Per [2.31] for $x = \frac{ln(\pi^\mathrm{e})!}{\pi}, \quad \forall x \in \mathbb{R}.$:
+	\begin{equation}
+		\frac{ln(\pi^\mathrm{e})!}{\pi} = \frac{(\mathrm{e} \log(\pi))!}{\pi}, x \neq 0.
+	\end{equation}
+\end{theorem}
 
 \nocite{*}
 
 \bibliographystyle{acm}
-\bibliography{Bell_System_Hartley, S0022314X10001836, Fatou1906, A_Course_of_Pure_Mathematics, General_Theory_Dirichlet_Series, Riemann, bonito2026}
+\bibliography{Bell_System_Hartley, S0022314X10001836, Fatou1906, A_Course_of_Pure_Mathematics, General_Theory_Dirichlet_Series, Riemann, bonito2026, hardy1922theory, chambadal1981dictionnaire}
 
 \end{document}
