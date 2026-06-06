@@ -151,12 +151,30 @@ Let us impose some remarks and definitions first.
 \end{remark}
 
 \begin{definition}
-	Per [1.1]. Let us define the following $\forall x \in \mathbb{R}.$:
+	Per [1.1]. Let us define the following $\forall x, n, p \in \mathbb{R}.$:
 	\begin{align*}
-		f(x) &= \int x \frac{ln(\pi^\mathrm{e})!}{\pi} dx.
+		f(x) &= \int_{n}^{p} x \frac{ln(\pi^\mathrm{e})!}{\pi} dx.
 	\end{align*}
 	If and only If: $f(x), x \neq 0.$
 \end{definition}
+
+\begin{theorem}
+	Per previous chapter, for the following integral for $\forall x \in \mathbb{R}.$:
+	\begin{equation}
+		\int_{e}^{\pi} \frac{\ln (x)^{e}}{e} \cdot e^{x} dx
+	\end{equation}
+	If and only If: $\forall x \in \mathbb{R}, \quad \mathrm{e} \leq x \leq \pi, \quad x \neq 0, \quad \forall x, n, p \in \mathbb{R}.$ Which then correlates to the following identity:
+	\begin{align*}
+		\int_{n}^{p} x \frac{ln(\pi^\mathrm{e})!}{\pi} dx &= \int_{e}^{\pi} \frac{\ln (x)^{e}}{e} \cdot e^{x} dx, \quad x \in \mathbb{R}.
+	\end{align*}
+	Which both converges starting from $[n, x), \quad n, p \neq 0, \quad n, p \in \mathbb{R}.$\\Thus If and only If: $\forall x \in \mathbb{R}.$ Then the geometric figure admits the following hyperbola in $\mathbb{R}$.
+	\begin{align*}
+		\centering
+		\includegraphics[width=0.2\linewidth]{implicit_plot_1}
+		\label{fig:implicitplot1}
+	\end{align*}
+	Figure 1. Geometric figure of the said hyperbola.
+\end{theorem}
 
 \nocite{*}
 
