@@ -176,6 +176,30 @@ Let us impose some remarks and definitions first.
 	Figure 1. Geometric figure of the said hyperbola.
 \end{theorem}
 
+\begin{definition}
+	Per Definition 2.30. The DFT, for all $x, m, n \in \mathbb{R}.$ And  $X, N \in \mathbb{C}.$:
+	\begin{align*}
+		X_k &= \sum_{m=0}^{N-1} x_{m}\mathrm{e}^{-i2\pi \frac{km}{N}n}, \quad k = 0,\dots,N-1.
+	\end{align*}
+	Per Dirichlet Series where $s \in \mathbb{C}.$ And $a_{n}$ is a complex sequence.:
+	\begin{align*}
+		\mathrm{D}(s) &= \sum_{n=1}^{\infty} \frac{a_{n}}{n^{s}}.
+	\end{align*}
+\end{definition}
+
+\begin{theorem}
+	Let the following for $\forall k, \in \mathbb{C}, \quad \forall m \in \mathbb{R}.$
+	\begin{align*}
+		k &= \prod_{m=1}^{\pi} \mathrm{e}^{-i2\pi \frac{km}{k}}, \quad k \in \mathbb{C}^{+},\\
+		k &= \prod_{m=1}^{\pi} \cos (-2\pi m) + i \sin (-2\pi m), \quad k \in \mathbb{C}^{+}.
+	\end{align*}
+	Therefore, by inference there is a following inequality in $\mathbb{C}, \quad \forall n \in \mathbb{R}, \quad n \neq 0.$:
+	\begin{align*}
+		\prod_{m=0}^{n} \cos (-2\pi m) + i \sin (-2\pi m) &\leq n,\\
+		(\prod_{m=0}^{n} \cos (-2\pi m) + i \sin (-2\pi m))^{p} &\leq n^{p}.
+	\end{align*}
+\end{theorem}
+
 \nocite{*}
 
 \bibliographystyle{acm}
