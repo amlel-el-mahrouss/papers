@@ -10,7 +10,7 @@ identifiers:
   - type: url
     value: 'https://amlal.nekernel.org'
     description: Amlal's Working Book.
-repository-code: 'https://github.com/amlel-el-mahrouss/awb'
+repository-code: 'https://github.com/amlel-el-mahrouss/papers'
 url: 'https://amlal.nekernel.org'
 abstract: >-
   Working Book by Amlal El Mahrouss.
