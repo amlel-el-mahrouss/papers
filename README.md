@@ -1,17 +1,17 @@
-# The Amlal's Working Book (AWB)
+# The Amlal's Papers (AP)
 
 ## Contents:
 
-The book is organized as the following:
+The repository is organized as the following:
 
-- Glossarium Aequationum.
-- On Proofs.
-- On Theorems.
+* Glossarium Aequationum.
+* On Proofs.
+* On Theorems.
 
 Additional content includes:
 
-- On Distributed Systems.
-- Plots.
+* On Distributed Systems.
+* Plots.
 
 Used to explore the concepts further.
 
