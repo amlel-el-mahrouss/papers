@@ -1,6 +1,6 @@
 cff-version: 1.2.0
-title: Amlal's Working Book.
-message: Amlal's Working Book.
+title: Amlal's Papers.
+message: Amlal's Papers.
 type: collection
 authors:
   - given-names: Amlal
@@ -9,7 +9,7 @@ authors:
 identifiers:
   - type: url
     value: 'https://amlal.nekernel.org'
-    description: Amlal's Working Book.
+    description: Amlal's Papers.
 repository-code: 'https://github.com/amlel-el-mahrouss/papers'
 url: 'https://amlal.nekernel.org'
 abstract: >-
