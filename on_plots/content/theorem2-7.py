@@ -1,13 +1,13 @@
 # ============================================================
 # File: theorem2-7.py
-# Description: Numerical evaluation and visualization of Theorem 2.7 from "Glossarium Aequationum" by Amlal El Mahrouss.
+# Description: Numerical evaluation and visualization of Theorem 2.7 from "Glossary" by Amlal El Mahrouss.
 # ============================================================
 
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import brentq
 
-# Theorem 2.7 — Glossarium Aequationum (Amlal El Mahrouss)
+# Theorem 2.7 — Glossary (Amlal El Mahrouss)
 #
 # For m = 7, log p ≠ log 1, and x ∈ ℝ:
 #
@@ -73,7 +73,7 @@ root_p = find_root(rhs_product, lhs_p, 1.02, 12.0)
 # --- figure ---
 fig, axes = plt.subplots(1, 2, figsize=(13, 5))
 fig.suptitle(
-    "Theorem 2.7 — Glossarium Aequationum\n"
+    "Theorem 2.7 — Glossary\n"
     r"$\sum_{k=1}^{7}\!\left(\frac{\ln x}{k}+\frac{k}{\ln x}\right)$  and  "
     r"$\prod_{k=1}^{7}\!\left(\frac{\ln x}{k}+\frac{k}{\ln x}\right)$",
     fontsize=13,

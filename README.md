@@ -4,14 +4,14 @@
 
 The repository is organized as the following:
 
-* Glossarium Aequationum.
+* Glossary.
 * On Proofs.
 * On Theorems.
 
 Additional content includes:
 
 * On Distributed Systems.
-* Plots.
+* On Plots.
 
 
 
