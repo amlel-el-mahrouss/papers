@@ -1,6 +1,6 @@
 # ============================================================
 # File: theorem2-7.py
-# Description: Numerical evaluation and visualization of Theorem 2.7 from "Glossary" by Amlal El Mahrouss.
+# Description: Numerical evaluation and visualization of Theorem 2.7 from "On Glossary" by Amlal El Mahrouss.
 # ============================================================
 
 import numpy as np
