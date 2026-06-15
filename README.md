@@ -7,9 +7,7 @@ Repository is organized in the following:
 * On Glossary.
 * On Proofs.
 * On Theorems.
-
-Additional content includes:
-
+- A Short Reference on Linear Algebra.
 * On Distributed Systems.
 * On Plots.
 
@@ -18,4 +16,4 @@ Additional content includes:
 * https://github.com/amlal-nekernel-org/talks
 * https://github.com/open-cpp-libraries/src
 
-##### Copyright (C) Amlal El Mahrouss 2025-2026, All rights Reserved. Licensed under the Apache License 2.0, see LICENSE.
+##### Copyright (C) Amlal El Mahrouss 2025-2026, All rights Reserved, licensed under the Apache License 2.0, see LICENSE.
