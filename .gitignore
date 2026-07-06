@@ -1,4 +1,5 @@
 .vs
+*~
 *.png
 *.aux
 *.fdb_latexmk
