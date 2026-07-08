@@ -16,7 +16,7 @@ The project is currently organized with several categories below:
 * On Distributed Systems.
 * On Plots.
 
-## Similar Work:
+## Similar Works:
 
 * https://github.com/publications-org/talks
 * https://github.com/publications-org/snippets
