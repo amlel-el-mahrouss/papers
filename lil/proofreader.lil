@@ -2,3 +2,5 @@
 
 (require 'model)
 
+(model init)
+(model load_personality "proofreader")

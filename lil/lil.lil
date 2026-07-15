@@ -1,0 +1,5 @@
+(* Little Lisp System *)
+
+(require 'model)
+
+(model init)
