@@ -1,0 +1,190 @@
+% Title: Tensor Product Representations and Analytic Continuation on Riemannian Structures
+% Author: Amlal El Mahrouss (A. E. Mahrouss)
+
+% AUTHOR: Amlal El Mahrouss
+% PURPOSE: Glossary of Theorems and Definitions.
+
+\documentclass[10pt]{article}
+
+%% ---- Core Packages ----------------------------------------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+%% ---- Page Geometry ----------------------------------------
+\usepackage[
+  top=1in, bottom=1in,
+  left=0.75in, right=0.75in,
+  columnsep=0.25in
+]{geometry}
+
+%% ---- Mathematics ------------------------------------------
+\usepackage{amsmath, amssymb, amsthm, amsfonts}
+\usepackage{mathtools}
+\usepackage{bm}
+\usepackage{textcomp}
+\usepackage{esint}
+
+%% ---- Figures & Tables -------------------------------------
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+
+%% ---- Code Listings ----------------------------------------
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\lstdefinestyle{codestyle}{
+  backgroundcolor=\color{gray!8},
+  basicstyle=\ttfamily\footnotesize,
+  breakatwhitespace=false,
+  breaklines=true,
+  captionpos=b,
+  commentstyle=\color{green!50!black},
+  keywordstyle=\color{blue}\bfseries,
+  stringstyle=\color{orange!70!black},
+  numberstyle=\tiny\color{gray},
+  numbers=left,
+  numbersep=5pt,
+  showstringspaces=false,
+  frame=single,
+  rulecolor=\color{gray!40},
+  tabsize=2
+}
+\lstset{style=codestyle}
+
+%% ---- Hyperlinks -------------------------------------------
+\usepackage[
+  colorlinks=true,
+  linkcolor=blue!70!black,
+  citecolor=green!50!black,
+  urlcolor=blue!60!black
+]{hyperref}
+\usepackage{url}
+
+%% ---- Bibliography -----------------------------------------
+\usepackage[numbers, sort&compress]{natbib}
+
+%% ---- Miscellaneous ----------------------------------------
+\usepackage{enumitem}
+\usepackage{siunitx}
+\usepackage{cleveref}
+
+%% ---- Theorem Environments ---------------------------------
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+%% ---- Custom Commands --------------------------------------
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Prob}{\mathbb{P}}
+\newcommand{\norm}[1]{\left\lVert #1 \right\rVert}
+\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
+\newcommand{\inner}[2]{\left\langle #1,\, #2 \right\rangle}
+\newcommand{\ie}{\textit{i.e.}\xspace}
+\newcommand{\eg}{\textit{e.g.}\xspace}
+\newcommand{\etal}{\textit{et al.}\xspace}
+
+%% ---- Caption Formatting -----------------------------------
+\captionsetup{
+  font=small,
+  labelfont=bf,
+  format=hang,
+  justification=justified
+}
+
+\usepackage{lettrine}
+
+%% ---- Header / Footer --------------------------------------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+%% ============================================================
+%%  FRONT MATTER
+%% ============================================================
+
+\title{%
+	\vspace{-1.5em}%
+	\large\textbf{Tensor Product Representations and Analytic Continuation on Riemannian Structures.}%
+}
+\author{By A. E. Mahrouss}
+\date{\today}
+
+%% ============================================================
+\begin{document}
+%% ============================================================
+
+\maketitle
+\tableofcontents
+\newpage
+
+%% ============================================================
+\section{Abstract:}
+%% ============================================================
+
+In this pre-print, we will cover and explore several products on Riemmanian manifolds and structures. Explorations of several theorems and proofs will be presented as well. Our objective is to come to several conclusions regarding tensors products and their applications in analysis.
+
+%% ============================================================
+\section{Introduction and Definitions:}
+%% ============================================================
+
+Letting us define two concepts before attacking the next section of the preprint:
+
+\begin{definition}
+    Let $\mathcal{P}$ denote a p-dim Riemannian manifold product with boundary. We will always assume $\mathcal{P}$ to factor two three-dimensional tensors that are non-zero. One may define such as:
+    \begin{equation}
+      \langle \mathcal{P} \rangle = \mathcal{T}_i \cdot \mathcal{P}_{ij} \cdot \mathcal{P}_{ijk}.
+    \end{equation}
+    A general identity, defined as an integral over the subregion $\mathcal{P}_{S,F}$ with respect to the Riemannian volume form, where $t \in [S, F]$ is a foliation parameter indexing a family of hypersurfaces $\{\mathcal{P}_t\}_{t \in [S,F]}$ that foliates $\mathcal{P}_{S,F}$, and $i, j, k$ are continuous local coordinates on each leaf $\mathcal{P}_t$:
+    \begin{equation}
+        \langle \mathcal{P} \rangle = \int_{\mathcal{P}_{S,F}} \mathcal{F}_{t}(i, j, k) \quad d\mathrm{vol}.
+    \end{equation}
+    Where $\mathrm{vol}$ is the Riemannian volume form on $\mathcal{P}$.
+\end{definition}
+
+%% ============================================================
+\section{Additional remarks regarding our proofs:}
+%% ============================================================
+
+%% ============================================================
+\section{Proofs of Definitions 2.1 over Riemannian manifolds:}
+
+\begin{corollary}
+\label{cor:integrability}
+  Let $\mathcal{F}_t$ be a continuous tensor field on the compact region $\mathcal{P}_{S,F} \subset \mathcal{P}$. Then $\mathcal{F}_t$ is integrable with respect to the Riemannian volume form $d\mathrm{vol}$, and $\int_{\mathcal{P}_{S,F}} \mathcal{F}_t(i,j,k)\,d\mathrm{vol}$ is well-defined.
+\end{corollary}
+
+\begin{theorem}
+  Per Definition~2.1, the integral $\int_{\mathcal{P}_{S,F}} \mathcal{F}_t(i, j, k)\,d\mathrm{vol}$ defines a specific case of $\langle \mathcal{P} \rangle$ over a Riemannian manifold, where $\mathcal{F}_t$ is a continuous tensor field on $\mathcal{P}$ and $\mathcal{P}_{S,F}$ is the subregion bounded by regions $S$ and $F$. This follows from Corollary~\ref{cor:integrability} and Fubini's theorem for Riemannian submersions: if $\mathcal{P}_{S,F}$ admits a foliation by $t$-slices, the integral decomposes as an iterated integral over fibers, recovering the contraction $\mathcal{T}_i \cdot \mathcal{P}_{ij} \cdot \mathcal{P}_{ijk}$.
+\end{theorem}
+
+%% TODO: Rework the references at the end.
+\nocite{*}
+\bibliographystyle{acm}
+\bibliography{Bell_System_Hartley, weil1967basic, pinter2010book, S0022314X10001836, Fatou1906, A_Course_of_Pure_Mathematics, General_Theory_Dirichlet_Series, Riemann, bonito2026, hardy1922theory, chambadal1981dictionnaire}
+
+%% ============================================================
+\end{document}
+%% ============================================================
