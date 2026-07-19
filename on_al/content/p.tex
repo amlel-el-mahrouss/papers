@@ -139,11 +139,15 @@ urlcolor=blue!60!black
 \tableofcontents
 \newpage
 
+%% ============================================================
 \section{Synopsis:}
+%% ============================================================
 
 \lettrine[lines=1, lhang=0.1, loversize=0.2]{L}ET the following theorems, proof, and definitions for this note.
 
+%% ============================================================
 \section{Observations:}
+%% ============================================================
 
 \lettrine[lines=1, lhang=0.1, loversize=0.2]{L}ET the following observations:
 
@@ -185,7 +189,33 @@ There exists an infinite set of solutions of transcendental property.
 	Per Corollary 3.1, $\int_{\frac{1}{p}}^{p} (\pi^{3/12} + \frac{\zeta(n)}{\pi})$, thus $\int_{\frac{1}{p}}^{p} (\pi^{3/12} + \frac{\zeta(n)}{\pi}) \geq \frac{1}{p}$. And $\int_{\frac{1}{p}}^{p} (\pi^{3/12} + \frac{\zeta(n)}{\pi}) \leq p$, thus $\frac{1}{p} \leq \int_{\frac{1}{p}}^{p} (\pi^{3/12} + \frac{\zeta(n)}{\pi}) \leq p$.
 \end{corollary}
 
+\begin{corollary}
+	There exists an indetity of the following for $\forall t, k, x \in \mathbb{R}$.:
+	\begin{align*}
+		\mathcal{M}(x, k) = \int_{n}^{p} \mathcal{M}_{x}(\mathcal{X}_k) \cdot t \quad dt,\\
+		\mathcal{M}(x, k)^{2} = \int_{n}^{p} \mathcal{M}_{x}(\mathcal{X}_k) \cdot t \quad dt^{2}.
+	\end{align*}
+	And thus we may write the following:
+	\begin{align*}
+		\mathcal{M}(x, k)^{2} + \mathcal{M}(x, k).
+	\end{align*}
+	Which then could be rewritten as:
+	\begin{align*}
+		F(x, k) &= \mathcal{M}(x, k)^{2} + \mathcal{M}(x, k).
+	\end{align*}
+	Adding a tensor $\mathcal{T}_2 \in \mathbb{R}.$:
+	\begin{align*}
+		F(x, k) + \mathcal{T}_2 &= \mathcal{M}(x, k)^{2} + \mathcal{M}(x, k) + \mathcal{T}_2.
+	\end{align*}
+	A more complete definition of $\mathcal{T}_2$ would then be:
+	\begin{align*}
+		\mathcal{T}_2 &= \mathcal{M}(x, k)^{2} + \mathcal{M}(x, k)^{1} + \mathcal{T}_2 - F(x, k), \quad \forall x, k \in \mathbb{R}.
+	\end{align*}
+\end{corollary}
+
+%% ============================================================
 \section{Going Forward:}
+%% ============================================================
 
 \lettrine[lines=1, lhang=0.1, loversize=0.2]{N}OW, we may start working on further notes regarding riemannian and differential geometry, alongside several advanced algebra concepts.
 
