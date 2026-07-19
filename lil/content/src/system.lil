@@ -4,4 +4,6 @@
 (require 'reader)
 (require 'proofreader)
 
+(require 'input)
+
 ((((model init) set_params) 10bn) run_loop)
