@@ -143,16 +143,21 @@ urlcolor=blue!60!black
 
 \lettrine[lines=1, lhang=0.1, loversize=0.2]{L}ET the following notes on Little Learner's state the tactic on its training. LiL adopts a dynamic approach to training. Letting it be able to unlearn and relearn missing or wrong concepts.
 
-\subsection{Training and feeding LiL:}
+\section{Introduction and Definitions:}
 
-One may train LiL using the following theorem:
+One may ask for definitions and rigorous mathematical grounding before proceeding development of LiL. The two sub-sections provides exactly that.\\
+One may note that the remarks and theorems are currently being benchmarked, addendum will be added accordingly.
+
+\subsection{Definitions:}
+
+One may train LiL using the following theorems and remarks:
 
 \begin{theorem}
 Let the following variables in $\mathbb{R}$ be defined as follows:
 \begin{align*}
-    \mathcal{X}_k &= \sum_{k=1}^{\infty} \mathcal{T}_k \otimes \mathcal{Y}_k + C_k.
+    \mathcal{X}_k &= \sum_{k=1}^{\infty} \mathcal{T}_k \otimes \mathcal{Y}_k \otimes C_k.
 \end{align*}
-Where $C_k$ is a constant term in $\mathbb{R}$. Where $\mathcal{X}$ is a sum of tensor products of $\mathcal{T}_k$ and $\mathcal{Y}_k$ for $k=1,2,\ldots$.
+Where $C_k$ is a non-zero constant term in $\mathbb{R}$. Where $\mathcal{X}$ is a sum of tensor products of $\mathcal{T}_k$ and $\mathcal{Y}_k$ for $k=1,2,\ldots$.
 \end{theorem}
 
 \begin{remark}
