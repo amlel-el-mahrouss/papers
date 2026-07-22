@@ -150,6 +150,7 @@ In this pre-print, we will cover and explore several products on Riemmanian mani
 Let us define two concepts before attacking the next section of the preprint:
 
 \begin{definition}
+\label{def:two-one}
     Let $\mathcal{P}$ denote a p-dim Riemannian manifold product with boundary. We will always assume $\mathcal{P}$ to factor three three-dimensional tensors that are non-zero. One may define such as:
     \begin{equation}
       \langle \mathcal{P} \rangle = \mathcal{T}_i \cdot \mathcal{T}_{ij} \cdot \mathcal{T}_{ijk}.
@@ -165,7 +166,7 @@ Let us define two concepts before attacking the next section of the preprint:
 \section{Additional Remarks regarding our Proofs:}
 %% ============================================================
 
-In this section, several remarks will be stated here regarding our observations of our theorems that have been written per 2.1.
+In this section, several remarks will be stated here regarding our observations of our theorems that have been written per \ref{def:two-one}.
 
 \begin{remark}
   There exist degenerate cases $\mathcal{P}_d$ of $\mathcal{P}$ for which the integral method does not converge in $\mathbb{R}$.
@@ -181,11 +182,11 @@ In this section, several remarks will be stated here regarding our observations 
 \end{corollary}
 
 \begin{theorem}
-  Per Definition~2.1, the integral $\int_{\mathcal{P}_{S,F}} \mathcal{F}_t(i, j, k)\,d\mathrm{vol}$ defines a specific case of $\langle \mathcal{P} \rangle$ over a Riemannian manifold, where $\mathcal{F}_t$ is a continuous tensor field on $\mathcal{P}$ and $\mathcal{P}_{S,F}$ is the subregion bounded by regions $S$ and $F$. This follows from Corollary~\ref{cor:integrability} and Fubini's theorem for Riemannian submersions: if $\mathcal{P}_{S,F}$ admits a foliation by $t$-slices, the integral decomposes as an iterated integral over fibers, recovering the contraction $\mathcal{T}_i \cdot \mathcal{T}_{ij} \cdot \mathcal{T}_{ijk}$.
+  Per Definition~\ref{def:two-one}, the integral $\int_{\mathcal{P}_{S,F}} \mathcal{F}_t(i, j, k)\,d\mathrm{vol}$ defines a specific case of $\langle \mathcal{P} \rangle$ over a Riemannian manifold, where $\mathcal{F}_t$ is a continuous tensor field on $\mathcal{P}$ and $\mathcal{P}_{S,F}$ is the subregion bounded by regions $S$ and $F$. This follows from Corollary~\ref{cor:integrability} and Fubini's theorem for Riemannian submersions: if $\mathcal{P}_{S,F}$ admits a foliation by $t$-slices, the integral decomposes as an iterated integral over fibers, recovering the contraction $\mathcal{T}_i \cdot \mathcal{T}_{ij} \cdot \mathcal{T}_{ijk}$.
 \end{theorem}
 
 \begin{corollary}
-  Per definitions in Definition~2.1, since the tensors are assumed non-zero ($\langle \mathcal{P} \rangle$), there are non degenerate cases of Definition 2.1 for both of the equations as restated below:
+  Per definitions in Definition~\ref{def:two-one}, since the tensors are assumed non-zero ($\langle \mathcal{P} \rangle$), there are non degenerate cases of Definition \ref{def:two-one} for both of the equations as restated below:
   \begin{equation}
     \langle \mathcal{P} \rangle = \mathcal{T}_i \cdot \mathcal{T}_{ij} \cdot \mathcal{T}_{ijk}.
   \end{equation}
@@ -201,7 +202,7 @@ In this section, several remarks will be stated here regarding our observations 
 
 \begin{proof}
 We proceed by construction, invoking Corollaries~4.3 and~4.4.\\
-(1) By Corollary~4.3, the contraction $\mathcal{T}_i \cdot \mathcal{T}_{ij} \cdot \mathcal{T}_{ijk}$ is non-degenerate on $\mathcal{P}_{S,F}$, since the constituent tensors are assumed non-zero by Definition~2.1. In particular, $\langle \mathcal{P} \rangle \neq 0$ on the initial leaf $\mathcal{P}_S$.\\
+(1) By Corollary~4.3, the contraction $\mathcal{T}_i \cdot \mathcal{T}_{ij} \cdot \mathcal{T}_{ijk}$ is non-degenerate on $\mathcal{P}_{S,F}$, since the constituent tensors are assumed non-zero by Definition~\ref{def:two-one}. In particular, $\langle \mathcal{P} \rangle \neq 0$ on the initial leaf $\mathcal{P}_S$.\\
 (2) By Corollary~4.4, $\mathcal{F}_t(i,j,k)$ factors as $\mathcal{T}_i(t) \cdot \mathcal{T}_{ij}(t) \cdot \mathcal{T}_{ijk}(t)$ on each leaf $\mathcal{P}_t$. Suppose the identity $\langle \mathcal{P} \rangle = \int_{\mathcal{P}_{S,t}} \mathcal{F}_t(i,j,k)\,d\mathrm{vol}$ holds for all leaves up to $\mathcal{P}_t$. Since $\mathcal{F}_t$ is continuous and non-degenerate by Corollaries~4.3 and~4.4, the identity extends to $\mathcal{P}_{t+\epsilon}$ for any $\epsilon > 0$ by continuity of the foliation parameter.\\
 (3) Applying Fubini's theorem for Riemannian submersions over $\mathcal{P}_{S,F}$:
 \begin{equation}
@@ -210,7 +211,7 @@ We proceed by construction, invoking Corollaries~4.3 and~4.4.\\
   = \mathcal{T}_i \cdot \mathcal{T}_{ij} \cdot \mathcal{T}_{ijk}
   = \langle \mathcal{P} \rangle.
 \end{equation}
-(4) Since the factorization is non-degenerate on every leaf and Fubini assembles the leaves globally over $\mathcal{P}_{S,F}$, both equations of Definition~2.1 are simultaneously satisfied, completing the proof.
+(4) Since the factorization is non-degenerate on every leaf and Fubini assembles the leaves globally over $\mathcal{P}_{S,F}$, both equations of Definition~\ref{def:two-one} are simultaneously satisfied, completing the proof.
 \end{proof}
 
 %% ============================================================
