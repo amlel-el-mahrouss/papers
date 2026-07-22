@@ -140,7 +140,7 @@ urlcolor=blue!60!black
 	\newpage
 
 %% ============================================================
-\section{Observations:}
+\section{Several Observations First:}
 %% ============================================================
 
 \begin{theorem}
@@ -179,6 +179,34 @@ Going forward on this note, we shall note the following observations for our fut
 \begin{remark}
 	$\mathcal{X}_{ijk}$ shall be a non-zero variable factoring $x$.
 \end{remark}
+
+\begin{remark}
+\label{rem:math-special-case}
+	One may separately note the following for a analytical two dimensional space $\mathcal{D}$:
+	\begin{equation}
+		\mathcal{T}_0 + \mathcal{R}_{t} = \iint_{\mathcal{D}} \mathcal{T}(\mathcal{X}_{x}, \mathcal{X}_{y})_{t} \, dx \land dy.
+	\end{equation}
+	Then:
+	\begin{equation}
+		\mathcal{T}_0 = \iint_{\mathcal{D}} \mathcal{T}(\mathcal{X}_{x}, \mathcal{X}_{y})_{t} \, dx \land dy - \mathcal{R}_{t}.
+	\end{equation}
+	A general use case for a strictly positive natural $n$ and simulation variable $x$ is:
+	\begin{equation}
+		\mathcal{T}_{0+n} = \iint_{\mathcal{D}} \mathcal{T}(\mathcal{X}_{x+n}, \mathcal{X}_{y+n})_{t+x} \, dx \land dy - \mathcal{R}_{t+n}.
+	\end{equation}
+	Or, more elegantly:
+	\begin{equation}
+		\mathcal{T}_{n} = \iint_{\mathcal{D}} \mathcal{T}(\mathcal{X}_{x+n}, \mathcal{X}_{y+n})_{t+x} \, dx \land dy - \mathcal{R}_{t+n}.
+	\end{equation}
+\end{remark}
+
+\begin{corollary}
+	$\mathcal{T}_{n}'$ is defined as:
+	\begin{equation}
+		\mathcal{T}_{n} =\operatorname{Trans}_{t|x}(\iint_{\mathcal{D}} \mathcal{T}(\mathcal{X}_{x+n}, \mathcal{X}_{y+n})_{t+x} \, dx \land dy - \mathcal{R}_{t+n}).
+	\end{equation}
+	Per Remark \ref{rem:math-special-case} where $t|x$ is to be read as "time $t$ over simulation variable $x$".
+\end{corollary}
 
 \nocite{*}
 \bibliographystyle{acm}
