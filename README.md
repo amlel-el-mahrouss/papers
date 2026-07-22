@@ -1,13 +1,11 @@
-# publications-org/pub (Amlal)
-
-#####  By Amlal El Mahrouss (A. E. Mahrouss)
+# Amlal El Mahrouss's Papers.
 
 ![License](https://img.shields.io/badge/LICENSE-Apache--2.0-blue.svg?style=for-the-badge)
 ![GitHub Repo Stars](https://img.shields.io/github/stars/publications-org/pub?style=for-the-badge)
 
 ## Synopsis:
 
-The TeX sources of Amlal El Mahrouss's papers, pre-prints, and notes, bib and resources included.
+These are the LaTeX sources of Amlal El Mahrouss's papers, pre-prints, notes, and bib resources are included.
 This repository contains research output and al. Credit is expected when using the work.
 
 ## Similar Work:
