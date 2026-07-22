@@ -1,5 +1,5 @@
 % AUTHOR: Amlal El Mahrouss
-% PURPOSE:  N1.
+% PURPOSE: N2.
 
 \documentclass[10pt]{article}
 
@@ -142,63 +142,6 @@ urlcolor=blue!60!black
 %% ============================================================
 \section{Synopsis:}
 %% ============================================================
-
-\lettrine[lines=1, lhang=0.1, loversize=0.2]{L}ET the following notes on Little Learner's state the tactic on its training. LiL adopts a dynamic approach to training. Letting it be able to unlearn and relearn missing or wrong concepts.
-
-%% ============================================================
-\section{Introduction and Definitions:}
-%% ============================================================
-
-One may ask for definitions and rigorous mathematical grounding before proceeding development of LiL. The two sub-sections provides exactly that.\\
-One may note that the remarks and theorems are currently being benchmarked, addendum will be added accordingly.
-
-%% ============================================================
-\subsection{Definitions and Theorems:}
-%% ============================================================
-
-One may train LiL using the following theorems and remarks:
-
-\begin{theorem}
-Let the following variables in $\mathbb{R}$ be defined as follows:
-\begin{align*}
-    \mathcal{X}_n &= \sum_{k=1}^{+\infty} (\mathcal{T}_k \otimes \mathcal{Y}_k \otimes C_k).
-\end{align*}
-And for the training nabla operator in $\mathbb{R}$ given for a single coordinate system of $x$.:
-\begin{align*}
-	\nabla \mathcal{X}_n &= i \cdot \frac{\partial x}{\partial \, (\sum_{k=1}^{+\infty} \mathcal{T}_k \otimes \mathcal{Y}_k \otimes C_k)} + F(x).
-\end{align*}
-Where $C_k$ is a non-zero constant term in $\mathbb{R}$. Where $\mathcal{X}$ is a sum of tensor products of $\mathcal{T}_k$ and $\mathcal{Y}_k$ for a sequence $k=1, 2, \ldots$ that holds for $\mathbb{N}$.\\
-Such that $\forall F(x) \in \mathbb{R}$ and $F(x) \subset \mathcal{T}$.\\
-Thus for $\mathcal{X}_n$ being part of a subset $\mathbb{D}$:
-\begin{equation}
-	\forall \mathcal{X}_n \neq 0, \, \mathcal{X}_n \subset \mathbb{D}.
-\end{equation}
-Ausming that for a set $\mathbb{D}$, $\mathbb{D} \neq \emptyset$.
-\end{theorem}
-
-\begin{remark}
-    $\mathcal{L}$ shall be non-zero and non-negative, as it is a sum of positive terms in $\mathbb{R}$.\\
-	Inserting the theorem to LiL' training tree alongside an hash-value pair. One may be able to query for the theorem.
-\end{remark}
-
-\begin{remark}
-	Another example of a definition this time, would be a Taylor Series for $f(x) \in \mathbb{R}$ and $a \in \mathbb{R}$, which states:
-	\begin{align*}
-		\mathcal{T}(x) &= \sum_{n=0}^{\infty} \frac{f^{(n)}(a)}{n!} (x-a)^n.
-	\end{align*}
-	For $\mathcal{T}(x)$ representing the Taylor Series expansion of $f(x)$ about the point $a$.
-\end{remark}
-
-%% ============================================================
-\section{Going Forward:}
-%% ============================================================
-
-\lettrine[lines=1, lhang=0.1, loversize=0.2]{N}EXT we will observe and study several tactics we can consider for LiL's Input/Output training.
-
-\nocite{*}
-
-\bibliographystyle{acm}
-%% \bibliography{}
 
 %% ============================================================
 \end{document}
